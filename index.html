@@ -4,6 +4,12 @@
 <head>
     <title>오운완 스토리 - Welcome</title>
     <meta charset="utf-8">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
     <style>
         body {
             margin: 10;
@@ -39,40 +45,46 @@
             margin: 0;
             padding: 20px;
         }
+
+        #grid {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+        }
     </style>
+
 </head>
 
 <body>
-    <h1><a href="index.html">오운완스토리</a></h1>
+    <!-- 1. section -->
+    <div class="bg-yellow-500">
+        <h1 class="text-9xl font-bold text-red-900 text-center">
+            ourstory</h1>
+    </div>
+
+    <!-- 2. image -->
+
+    <img src="ownwan_logo.jpeg" width="600" style="display:block;margin:0 auto;">
+    <div style="padding:50px" class="text-center">
+        <a href="https://www.instagram.com/ownwan_story_official/" target="_blank" title="ownwan_story_official">
+            오운완스토리</a>는 각자 개인 운동 목표를 가지고 <strong><u><i>꾸준히 운동하자</i></u></strong>는
+        <p>
+            공동의 목표를 가진 사람들이 꾸준히 운동을 하며 성장해나가는 커뮤니티입니다.</p>
+    </div>
+
+    <!-- 3. navigation -->
+    <div id="gird" class="bg-orange-500 text-center padding 50px">
+    </div>
     <ol>
         <li><a href="1.html" class="saw">오운완스토리 소개</a></li>
-        <li><a href="2.html" class="saw" id="active">오운완스토리 진행</a></li>
+        <li><a href="2.html" class="saw" id="active" style="color:green;">오운완스토리 진행</a></li>
         <li><a href="3.html">오운완스토리 신청</a></li>
     </ol>
-    <!--
-    <h1><a href="index.html">오운완스토리</a></h1>
-    <ol>
-        <li><a href="1.html">오운완스토리 소개</a></li>
-        <li><a href="2.html">오운완스토리 진행</a></li>
-        <li><a href="3.html">오운완스토리 신청</a></li>
-    </ol>
--->
-    <h2>
-        <img src="ownwan_logo.jpeg" width="600" style="display:block;margin:0 auto;">
-        <div style="margin-top:60px;">
-            <a href="https://www.instagram.com/ownwan_story_official/" target="_blank" title="ownwan_story_official">
-                오운완스토리</a>는 각자 개인 운동 목표를 가지고 <strong><u><i>꾸준히 운동하자</i></u></strong>는
-            <p>
-                공동의 목표를 가진 사람들이 꾸준히 운동을 하며 성장해나가는 커뮤니티입니다.</p>
-        </div>
-    </h2>
-
-
-    <div style="background-color:blue;width: 50%;color:white;font-size: 50px;">
+    <div>
+        <h2>오운완 스토리</h2>
+        <p>오늘 운동을 내일로 미루지 말자 </p>
     </div>
-    </p>
-    <p>
     <div id="disqus_thread"></div>
+
     <script>
         /**
          *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
@@ -94,4 +106,28 @@
             Disqus.</a></noscript>
     </p>
 
+    <div id="carouselExample" class="carousel slide w-1/2 overflow-hidden">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="work1.jpg" class="d-block" $black; alt="work1" style="object-fit:cover;" width="400px"
+                    height="500px">
+            </div>
+            <div class="carousel-item">
+                <img src="work2.jpg" class="d-block" $black; alt="work2" style="object-fit:cover;" width="400px"
+                    height="500px">
+            </div>
+            <div class="carousel-item">
+                <img src="work3.jpg" class="d-block" $black; alt="work3" style="object-fit:cover;" width="400px"
+                    height="auto;">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
 </body>
